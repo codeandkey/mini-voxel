@@ -1,0 +1,9 @@
+JT Stanley - Environment
+
+This is just a test for a 3-dimensional first-person platforming environment.
+The renderer is written using the OpenGL fixed-function pipeline, so it will actually compile on older systems and Windows computers.
+
+Modern OpenGL would be a lot better..
+
+Controls : Left and Right arrow keys to look around.
+	   WASD keys for movement.
