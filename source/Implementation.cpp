@@ -134,7 +134,7 @@ void GenerateVoxelMap(VoxelGrid* target_voxel_grid) {
 	GenerateBlock(-6, 1, 3, -4, 5, 5, program_voxel_grid_handle, 0.2f, 0.4f, 0.4f);
 	GenerateBlock(-6, 1, 8, -4, 6, 13, program_voxel_grid_handle, 0.2f, 0.1f, 0.2f);
 	GenerateBlock(-6, 5, 10, -4, 7, 13, program_voxel_grid_handle, 0.2f, 0.1f, 0.2f);
-	GenerateBlock(-6, 7, 12, -4, 9, 13, program_voxel_grid_handle, 0.2f, 0.1f, 0.2f, Voxel::VoxelShape::Pyramid);
+	GenerateBlock(-6, 7, 12, -4, 9, 13, program_voxel_grid_handle, 0.2f, 0.1f, 0.2f, Voxel::VoxelShape::Cuboid);
 	GenerateBlock(-19, 11, -19, 19, 11, 19, program_voxel_grid_handle, 0.6f, 0.0f, 0.0f, Voxel::VoxelShape::Pyramid);
 	GenerateBlock(-6, 11, 0, -4, 11, 10, program_voxel_grid_handle, 0.2f, 0.1f, 0.2f);
 	GenerateBlock(-7, 11, -10, -3, 13, -5, program_voxel_grid_handle, 0.2f, 0.1f, 0.2f);
@@ -153,7 +153,6 @@ bool InitializeContext(void) {
 	}
 
 	glfwInit();
-	glewInit();
 
 	::glfw_primary_video_mode = (GLFWvidmode*) glfwGetVideoMode(glfwGetPrimaryMonitor());
 

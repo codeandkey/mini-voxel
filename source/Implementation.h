@@ -1,6 +1,7 @@
 #pragma once
 
-#include <GL/glew.h> // For GL function pointers.
+#include <GL/gl.h>
+#include <GL/glu.h>
 #include <GLFW/glfw3.h> // For windowing.
 
 #include <cstdlib> // For printf(), exit().

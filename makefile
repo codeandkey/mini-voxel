@@ -1,6 +1,6 @@
 COMPILER = g++
 FLAGS = -std=c++11 -Wall
-LDFLAGS = `pkg-config --static --libs glfw3` -lGLU -lGLEW -lSOIL
+LDFLAGS = `pkg-config --static --libs glfw3` -lGLU -lGL -lSOIL
 
 SOURCES = Implementation.cpp Voxel.cpp VoxelGrid.cpp
 OUTPUT = EnvOutput
